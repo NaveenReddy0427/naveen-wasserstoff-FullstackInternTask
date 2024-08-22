@@ -42,9 +42,10 @@ weather-app/
 └── package.json              # Project metadata and dependencies
 
 ```
+## steps to clone and run the application 
 
-## git clone https://github.com/NaveenReddy0427/naveen-wasserstoff-FullstackInternTask.git
-## cd WeatherForecastDashboard
-## npm install
-## npm run dev
+#### step-1 :git clone https://github.com/NaveenReddy0427/naveen-wasserstoff-FullstackInternTask.git
+#### step-2: cd WeatherForecastDashboard
+#### step-3: npm install
+#### step-4: npm run dev
 
