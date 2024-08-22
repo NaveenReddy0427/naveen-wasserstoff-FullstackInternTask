@@ -1,11 +1,11 @@
 # Weather Forecast Dashboard
 
-A modern and responsive weather forecast dashboard built with HTML, CSS, JavaScript, React, and Vite. This app provides real-time weather data and a 7-day forecast, utilizing a clean and aesthetically pleasing UI.
+A modern and responsive weather forecast dashboard built with HTML, CSS, JavaScript, React, and Vite. This app provides real-time weather data and a 5-day forecast, utilizing a clean and aesthetically pleasing UI.
 
 ## Features
 
 - **Real-Time Weather Data**: Displays the current weather conditions including temperature, humidity, and wind speed.
-- **7-Day Forecast**: Provides weather predictions for the upcoming week.
+- **5-Day Forecast**: Provides weather predictions for 5 days.
 - **Responsive Design**: Ensures the dashboard looks great on all screen sizes.
 - **Unit Toggle**: Easily switch between Celsius and Fahrenheit.
 - **Clean UI**: Inspired by popular weather dashboards like those by Google and Apple.
@@ -41,7 +41,9 @@ weather-app/
 │
 └── package.json              # Project metadata and dependencies
 
-## git clone https://github.com/NaveenReddy0427/naveen-wasserstoff-FullstackInternTask/
+```
+
+## git clone https://github.com/NaveenReddy0427/naveen-wasserstoff-FullstackInternTask.git
 ## cd WeatherForecastDashboard
 ## npm install
 ## npm run dev
