@@ -1,0 +1,220 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ECF0F1, #BDC3C7);
+
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: 100vh; */
+  padding: 10px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.controls button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Unit Toggle Styling */
+.unit-toggle {
+  display: flex;
+  gap: 5px;
+}
+
+.unit-toggle button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.unit-toggle button.active {
+  background-color: #007bff; /* Active button color */
+  color: white;
+}
+
+.unit-toggle button:not(.active) {
+  background-color: #f0f0f0; /* Inactive button color */
+  color: #333;
+}
+
+.unit-toggle button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #ff6666; /* Celsius button color */
+}
+
+.unit-toggle button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #66b3ff; /* Fahrenheit button color */
+}
+
+
+/* Dashboard Grid Layout */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Weather Card Styling */
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  /* margin-left: 120px; */
+}
+
+.weather-card-content {
+  text-align: center;
+}
+
+.weather-icon {
+  width: 100px;
+  height: auto;
+}
+
+.weather-details {
+  margin-top: 16px;
+}
+
+.weather-details h2 {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.weather-details p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.weather-details i {
+  margin-right: 8px;
+}
+
+
+
+
+/* Forecast Card Styling */
+.forecast {
+  display: flex;
+  gap: 15px;
+  width: 100%;  
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.forecast-card {
+  width: 180px;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Error Message Styling */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Background Colors for Different Weather Conditions */
+.clear-sky { background: linear-gradient(135deg, #87CEEB, #1E90FF); color: white; }
+.few-clouds { background: linear-gradient(135deg, #D3D3D3, #A9A9A9); color: black; }
+.scattered-clouds { background: linear-gradient(135deg, #B0C4DE, #778899); color: white; }
+.broken-clouds { background: linear-gradient(135deg, #696969, #A9A9A9); color: white; }
+.shower-rain { background: linear-gradient(135deg, #4682B4, #00CED1); color: white; }
+.rain { background: linear-gradient(135deg, #000080, #4169E1); color: white; }
+.thunderstorm { background: linear-gradient(135deg, #2F4F4F, #708090); color: white; }
+.snow { background: linear-gradient(135deg, #F8F8FF, #FFFFFF); color: black; }
+.mist { background: linear-gradient(135deg, #778899, #B0C4DE); color: black; }
+.default-weather { background: linear-gradient(135deg, #808080, #A9A9A9); color: white; }
+/* Additional Background Colors */
+.light-rain { background: linear-gradient(135deg, #ADD8E6, #87CEFA); color: black; }
+.overcast-clouds { background: linear-gradient(135deg, #C0C0C0, #A9A9A9); color: white; }
+
+
+/* Media Queries for Extra Responsiveness */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .unit-toggle {
+    flex-direction: column;
+  }
+
+  .unit-toggle button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-card {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .weather-details h2 {
+    font-size: 20px;
+  }
+
+  .weather-details p {
+    font-size: 14px;
+  }
+
+  .forecast-card {
+    width: 100%;
+  }
+}
