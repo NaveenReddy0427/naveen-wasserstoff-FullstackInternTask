@@ -21,7 +21,7 @@ A modern and responsive weather forecast dashboard built with HTML, CSS, JavaScr
 ## Project Structure
 
 ```plaintext
-weather-app/
+WeatherForecastDashboard/
 │
 ├── public/
 │   └── index.html            # Main HTML file
@@ -29,7 +29,7 @@ weather-app/
 ├── src/
 │   ├── components/
 │   │   ├── Weather.jsx       # Component for displaying current weather
-│   │   ├── Forecast.jsx      # Component for displaying the 7-day forecast
+│   │   ├── Forecast.jsx      # Component for displaying the 5-day forecast
 │   │   └── UnitToggle.jsx    # Component for toggling between Celsius and Fahrenheit
 │   │
 │   ├── api/
